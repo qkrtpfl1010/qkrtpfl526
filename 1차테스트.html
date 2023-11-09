@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+
+        </script>
+                <style>
+                    fieldset {
+                        background-color: pink;
+                    }
+                    .here {
+                        color: red;
+                    }
+                    .hc{
+                        color: palevioletred;
+                    
+                    }
+                    .coco{
+                        background-color: orange;
+                    }
+                    .cxc{
+                        background-color: aqua;
+                    }
+                    .sdsd{
+                        color: #6c1616;
+                    }
+                </style>
+    </head>
+    <body>
+        <form>
+            <fieldset class="here"><!--박스?-->
+                <legend>배송지 주소</legend><!--박스 선 중간에 글씨-->
+                <ol>
+                    <li>
+                        주소<br>
+                        <input type="text" name="name"/>
+                    </li>
+                    <li> <!--.으로 부를 수 있음(head 참고)-->
+                        우편번호 <input type="password" name="name"/>
+                    </li>
+                </ol>  
+            </fieldset>
+            <br>
+            <fieldset class="here">
+                <legend>카드 정보 입력</legend>
+                <ol>
+                    <li>
+                        <fieldset class="coco">
+                        <legend>카드 타입</legend>
+                        <ol>
+                            <li class="cxc">
+                                <input type="radio" name="visa" value="visa" />visa
+                            </li>
+                            <li>
+                                <input type="radio" name="AmEX" value="AmEX"/>AmEX
+                            </li>
+                            <li>
+                                <input type="radio" name="Marstercard" value="Marstercard"/>Marstercard
+                            </li>
+                        </ol>
+                        </fieldset>
+                        <li class="sdsd">
+                            신청갯수 <input type="text" name="name"/>
+                        </li>
+                        <li>
+                            우편번호 <input type="password" name="name"/>
+                        </li>
+                </ol>
+            </fieldset>
+        </form> 
+       
+        이메일: <input type="email"/><br/>
+        비밀번호: <input type="password" name="password"/><br/>
+        숫자: <input type="number" min="-10" max="20" step="3" name="age"/><br/>
+        범위: <input type="range" name="range" min="10" max="20" step="3"/><br/>
+        색상: <input type="color" name="color"/></li><br/>
+                <input type="checkbox" name="password" value="piano"/>피아노<br/>
+                <input type="checkbox" name="password" value="piano"/>축구<br/>
+                <input type="radio" name="sex" value="female"/>여성<br/>
+                <input type="radio" name="sex" value="male"/>남성<br/>
+        date: <input type="datetime-local" name="date"><br/>
+        month: <input type="month" name="month"></li><br/>
+        week: <input type="week" name="week"></li><br/>
+        button : <input type="button" name="button" name="click" value="click me"/><br/>
+        <button onclick="testfn()">click me</button><br/>
+    </body>
+</html>

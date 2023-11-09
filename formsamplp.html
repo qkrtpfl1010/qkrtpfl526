@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+
+        </script>
+
+        <style>
+            fieldset {
+                background-color: pink;
+            }
+            .here {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset><!--박스?-->
+                <legend>폴라 가입서</legend><!--박스 선 중간에 글씨-->
+                <ol style="background-color: aqua;">
+                    <li>
+                        이름 : <input type="text" name="name"/>
+                    </li>
+                    <li class="here"> <!--.으로 부를 수 있음(head 참고)-->
+                        비밀번호 : <input type="password" name="name"/>
+                    </li>
+                    <li>
+                        취 미 : <input type="checkbox" name="password" value="piano"/>피아노<!--다중 선택 박스-->
+                        <input type="checkbox" name="password" value="piano"/>축구
+                    </li>
+                    <li>
+                        성 별 : <input type="radio" name="sex" value="female"/>여성<!--둘 중 하나만 선택 가능 박스-->
+                        <input type="radio" name="sex" value="male"/>남성
+                    </li>
+                </ol>  
+            </fieldset>
+        </form>
+    </body>
+</html>
